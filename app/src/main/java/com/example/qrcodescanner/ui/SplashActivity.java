@@ -1,13 +1,13 @@
 package com.example.qrcodescanner.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.qrcodescanner.MainActivity;
 import com.example.qrcodescanner.R;
@@ -45,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void animatelogo() {
 
-        Animation fadingInAnimation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+        Animation fadingInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_without_duration);
         fadingInAnimation.setDuration(SPLASH_DELAY);
         imageview.startAnimation(fadingInAnimation);
     }
