@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:android1="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
@@ -12,17 +12,17 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:context=".MainActivity">
 
         <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
             layout_height="wrap_content"
             layout_width="0dp"
+            android:background="@color/white"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="@string/admob_banner_ad_unit_id"
-            android:background="@color/white"
-            android:id="@+id/adView"
             ads:layout_constraintBottom_toBottomOf="parent"
             ads:layout_constraintEnd_toEndOf="parent"
             ads:layout_constraintStart_toStartOf="parent"
@@ -195,22 +195,5 @@
             />
 
 
-        <qr
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
